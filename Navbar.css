@@ -1,0 +1,69 @@
+.back{
+    background: linear-gradient(to left,#ed9726,rgba(255, 247, 187, 0.9));
+    display: flex;
+    height:70px;
+    justify-content: space-around;
+    align-items: center;
+}
+.back .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back .main .ele img{
+    width:80px;
+    height: 60px;
+    padding: 10px 20px; 
+}
+.back .main .ele h1{
+    font-family:Brush Script MT, Brush Script Std, cursive	;
+    font-size: 45px;
+}
+.back .one ul{
+    list-style: none;
+  display: flex;
+ 
+}
+.back .one ul li a{
+    text-decoration: none;
+    font-size:20px;
+    color:#0c0b0f;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+}
+.back .one ul li a:hover{
+    background-color:rgb(216, 222, 230);
+  color:rgb(14, 13, 13);
+}
+
+@media (max-width:800px){
+    .back .main .ele img{
+        width:60px;
+        height: 60px;
+        padding: 10px 20px; 
+    }
+    .back .main .ele h1{
+        font-size: 35px;
+        
+    }
+    .back{
+        display: flex;
+        flex-direction: column;
+        height:200px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .back .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .back .one ul li a{
+        font-size:17px;
+        color:#0f0f11;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 10px;
+    }
+   
+}

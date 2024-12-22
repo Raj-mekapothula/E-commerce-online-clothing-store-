@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  section { 
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+  }
+  .cards {
+    width: 250px;
+    padding: 20px;
+  }
+  .cards:hover {
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .image_box img {
+    width: 250px;
+    height: 200px;
+  }
+  .details p:nth-child(1) {
+    font-weight: bold;
+  }
+  .details p:nth-child(2) {
+    color: rgb(9, 8, 8);
+    font-size: 0.5rem;
+  }
+  .details p:nth-child(3) {
+    font-weight: bold;
+    color: rgb(15, 13, 13);
+  }
+  .details button {
+    padding: 5px 90px;
+    border: none;
+    font-weight: bold;
+    background-color: rgb(240, 76, 11);
+    outline: none;
+  }
+  @media (max-width:800px){
+    .image_box img {
+      width: 150px;
+      height: 200px;
+    }
+    .details p:nth-child(2) {
+      font-size: 0.1rem;
+    }
+    .details p:nth-child(3) {
+      font-weight: none;
+    }
+    .cards:hover {
+      box-shadow: none;
+    
+    }
+    section {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .cards {
+      width: 10px;
+      padding: 20px;
+    }
+    .details button {
+      padding: 5px 60px;
+      font-weight: none;
+    }
+  }
